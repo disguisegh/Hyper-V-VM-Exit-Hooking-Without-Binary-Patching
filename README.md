@@ -1,0 +1,1 @@
+The idea here is that we’re not directly patching the HVAX/HVIX binaries in memory. Instead, your EFI application creates a copy of the original page, applies the modifications to that copy, and waits until everything is ready before switching the host page tables to point to it.
